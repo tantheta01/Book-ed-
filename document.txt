@@ -1,0 +1,35 @@
+Schema Design: 
+For Books : The books required fields such as author name, lender, genre, title, available, etc. 
+create schema book_ed:
+CREATE TABLE book_ed.book(
+isbn varchar(30), NOT NULL, 
+title varchar(200), NON-NULL,
+lender user(1), NOT NULL,
+genre choicefield(1) ,
+)
+
+For Users: Users require fields like username, name, email, mobile, address
+create schema user;
+CREATE TABLE Book_ed user(
+username varchar(200) NOT NULL
+name varchar(200) NOT NULL 
+email emailfield (255) 
+mobile phonefield 
+Address varchar() NOT NULL
+
+
+
+This is the corresponding models file.
+
+Database documentation:
+
+For Users:
+The users have a login system (username and password) 
+If the user wishes to borrow a book, s/he searches for the author name in the search box.
+The searched name pops up and the person is able to check if the book is available for borrowing. If the book is available for borrowing, the lender’s username is visible, the user can request the book and can borrow it.
+
+For Books:
+        Each book has a unique lender who is a user. 
+        Every book has a state, whether it is available or unavailable. Whenever a user       searches for the book, and borrows the book if it is available. Subsequently the availability status changes to unavailable.
+
+
