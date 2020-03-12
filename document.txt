@@ -30,6 +30,14 @@ The searched name pops up and the person is able to check if the book is availab
 
 For Books:
         Each book has a unique lender who is a user. 
-        Every book has a state, whether it is available or unavailable. Whenever a user       searches for the book, and borrows the book if it is available. Subsequently the availability status changes to unavailable.
+        Every book has a state, whether it is available or unavailable. Whenever a user       searches for the book, and borrows the book if it is available. Subsequently the availability status changes to unavailable. 
+        
+        
+        Search:
+        Since we know that the search shall be based on the Author Names, we can maintain a sorted database of books using the order by method in the views.py file so we effectively cansearch using binary search method. This will help reduce the number of querries.
+        
+        BONUS problem:
+        
+        When a person types a string in the search box, all the books having authors matching his search should be sorted on the basis of genre field. Where the sorting order is based on the number of times a book of a particular genre has been borrowed by the user. Thus we would need to create additional fields in the user class to accomodate storing of frequencies of previously borrowed books.
 
 
