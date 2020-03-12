@@ -40,4 +40,4 @@ For Books:
         
         When a person types a string in the search box, all the books having authors matching his search should be sorted on the basis of genre field. Where the sorting order is based on the number of times a book of a particular genre has been borrowed by the user. Thus we would need to create additional fields in the user class to accomodate storing of frequencies of previously borrowed books.
 
-
+Most of the project is based on learning from the django documentation at https://docs.djangoproject.com
